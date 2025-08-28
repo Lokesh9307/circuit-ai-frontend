@@ -40,7 +40,7 @@ export default function Home() {
   console.log(formatExplanation(data?.explanation));
 
   return (
-    <div className="flex h-[90vh] bg-black text-white overflow-hidden">
+    <div className="flex h-[85vh] md:h-[90vh] bg-black text-white overflow-hidden">
       {/* Left Main Area (60%) */}
       <div className="flex-1 flex flex-col w-3/5">
         {/* Header */}
