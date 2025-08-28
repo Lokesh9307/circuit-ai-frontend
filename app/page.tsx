@@ -180,6 +180,7 @@ export default function Home() {
             </button>
           </div>
         </div>
+
       </div>
 
       {/* Right Sidebar (40%) */}
