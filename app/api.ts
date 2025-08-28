@@ -6,9 +6,8 @@ export interface GenerateResponse {
 }
 
 
-const BACKEND_URL = "https://circuit-ai-api-117429664165.europe-west1.run.app"; // FastAPI
+const BACKEND_URL = process.env.NEXT_PUBLIC_CIRCUIT_API_URL || "http://localhost:8000";
 
-console.log("Using backend URL:", BACKEND_URL);
 
 /**
  * Call FastAPI backend to generate circuit diagram + code.

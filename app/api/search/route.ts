@@ -13,9 +13,8 @@ export async function GET(req: Request) {
       return NextResponse.json({ error: "Query parameter 'q' is required" }, { status: 400 });
     }
 
-    // const apiKey = process.env.SERP_API_KEY;
-    // console.log("Using SerpAPI key:", apiKey);
-    const apiKey = "475bf976e3395213ff6aafbc7c3805eba4c2050b91254282902077751cc5d14e";
+    const apiKey = process.env.SERP_API_KEY;
+  
     if (!apiKey) {
       console.error("❌ SERPAPI_KEY missing in environment!");
       return NextResponse.json({ error: "Missing SERPAPI_KEY" }, { status: 500 });
